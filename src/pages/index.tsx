@@ -105,12 +105,9 @@ export default function Home() {
                 >
                   <Link href={`/r/${sub.name}`}>
                     <a>
-                      <Image
-                        className='rounded-full cursor-pointer'
+                      <img
                         src={sub.imageUrl}
-                        alt='Sub'
-                        width={(6 * 16) / 4}
-                        height={(6 * 16) / 4}
+                        className='w-6 h-6 mr-1 rounded-full cursor-pointer'
                       />
                     </a>
                   </Link>

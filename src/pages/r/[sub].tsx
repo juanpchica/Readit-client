@@ -116,15 +116,12 @@ function Sub() {
               <div className='h-20 bg-white'>
                 <div className='container relative flex'>
                   <div className='absolute' style={{ top: -15 }}>
-                    <Image
+                    <img
                       src={sub.imageUrl}
-                      alt='Sub'
-                      className={classNames("rounded-full", {
+                      className={classNames("rounded-full w-15 h-15", {
                         "cursor-pointer": ownSub,
                       })}
                       onClick={() => openFileInput("image")}
-                      width={70}
-                      height={70}
                     />
                   </div>
                   <div className='pt-1 pl-24'>
