@@ -29,7 +29,7 @@ export default function Register() {
         username,
       });
 
-      router.push("/login");
+      router.push("/");
     } catch (error) {
       setErrors(error.response.data);
     }
