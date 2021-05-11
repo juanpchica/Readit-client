@@ -89,13 +89,7 @@ const Navbar: React.FC = () => {
                 className='flex items-center px-4 py-3 cursor-pointer hover:bg-gray-200'
                 onClick={() => goToSub(sub.name)}
               >
-                <Image
-                  src={sub.imageUrl}
-                  className='rounded-full'
-                  alt='Sub'
-                  height={(8 * 16) / 4}
-                  width={(8 * 16) / 4}
-                />
+                <img src={sub.imageUrl} className='w-6 h-6 rounded-full' />
                 <div className='ml-4 text-sm'>
                   <p className='font-medium'>{sub.name}</p>
                   <p className='text-gray-600'>{sub.title}</p>
