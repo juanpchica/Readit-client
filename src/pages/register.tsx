@@ -5,6 +5,7 @@ import { FormEvent, useState } from "react";
 
 import Axios from "axios";
 import InputGroup from "../components/InputGroup";
+import { useAuthState } from "../context/Auth";
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -12,8 +13,11 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [agreement, setAgreement] = useState<any>(false);
   const [errors, setErrors] = useState<any>({});
+  const { authenticated } = useAuthState();
 
   const router = useRouter();
+  if (authenticated) router.push("/");
+
   const register = async (e: FormEvent) => {
     e.preventDefault();
 
@@ -29,7 +33,7 @@ export default function Register() {
         username,
       });
 
-      router.push("/");
+      router.push("/login");
     } catch (error) {
       setErrors(error.response.data);
     }
