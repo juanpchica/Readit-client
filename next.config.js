@@ -11,6 +11,6 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ["www.gravatar.com", "https://readit-client-one.vercel.app/"],
+    domains: ["www.gravatar.com", "https://readit-server-jpc.herokuapp.com"],
   },
 };
