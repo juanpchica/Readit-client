@@ -118,7 +118,7 @@ function Sub() {
                   <div className='absolute' style={{ top: -15 }}>
                     <img
                       src={sub.imageUrl}
-                      className={classNames("rounded-full w-15 h-15", {
+                      className={classNames("rounded-full w-16 h-16", {
                         "cursor-pointer": ownSub,
                       })}
                       onClick={() => openFileInput("image")}
